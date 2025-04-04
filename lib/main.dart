@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'AI Chat with Vision',
       theme: ThemeData(
         brightness: Brightness.dark,
         primaryColor: Colors.grey[900],
@@ -25,14 +25,19 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.grey[900],
           elevation: 0,
+          titleTextStyle: const TextStyle(
+            color: Colors.white,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
         ),
         inputDecorationTheme: const InputDecorationTheme(
           border: OutlineInputBorder(
-            borderSide: BorderSide(color: Color.fromARGB(255, 134, 129, 129)),
+            borderSide: BorderSide(color: Colors.white70),
           ),
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(
-              color: Color.fromARGB(255, 134, 129, 129),
+              color: Colors.white70,
               width: 2,
             ),
           ),
